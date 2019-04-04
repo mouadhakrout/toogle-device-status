@@ -1,0 +1,9 @@
+<div class="container">
+<h1>Audio devices:</h1>
+<ul class="list-group" *ngFor="let audioDevice of audioDevices">
+<li [ngStyle]="{'background-color':audioDevice.active?'#218838':'#dc3545','color':'#fff'}" class="list-group-item">	
+  {{ audioDevice.name }}
+</li>
+</ul>
+</div>
+
